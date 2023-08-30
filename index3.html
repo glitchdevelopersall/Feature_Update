@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+      }
+
+      .left-side {
+        flex: 1;
+        background-color: #8535b3;
+      }
+
+      .right-side {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 0, 128, 0.5);
+      }
+
+      .overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 0, 128, 0.5);
+        background-image: url("./img/PngItem_65234.png");
+      }
+
+      .cn_i {
+        position: relative;
+        text-align: center;
+        left: 50%;
+        top: 30%;
+        z-index: 1;
+        color: white;
+        font-size: 25px;
+      }
+
+      span {
+        background-color: #43ccbc;
+      }
+
+      .line {
+        width: 116px;
+        height: 0px;
+        border: orange solid;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="cn_i">
+          <h1>
+            Embracing the <br />
+            <span>New Normal </span> of
+          </h1>
+          <h1>
+            REMOTE <br />
+            WORK
+          </h1>
+          <div class="line"></div>
+          <p>20 Benefit</p>
+        </div>
+        <div class="overlay2"></div>
+      </div>
+      <div class="right-side">
+        <img src="./img/03.jpg" alt="Image" class="image" />
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </body>
+</html>
